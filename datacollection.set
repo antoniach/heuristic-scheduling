@@ -1,0 +1,268 @@
+# SCIP version 7.0.0.1
+
+branching/relpscost/conflictweight = 0
+branching/relpscost/inferenceweight = 0
+branching/relpscost/cutoffweight = 0
+
+heuristics/farkasdiving/rootsuccess = FALSE
+
+# should pseudo costs be updated also in diving and probing mode?
+# [type: bool, advanced: FALSE, range: {TRUE,FALSE}, default: TRUE]
+branching/divingpscost = FALSE
+
+# frequency for calling primal heuristic <actconsdiving> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: -1]
+heuristics/actconsdiving/freq = 1
+heuristics/actconsdiving/shadowmode = TRUE
+
+# frequency offset for calling primal heuristic <actconsdiving>
+# [type: int, advanced: FALSE, range: [0,65534], default: 5]
+heuristics/actconsdiving/freqofs = 0
+
+# frequency for calling primal heuristic <adaptivediving> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: 5]
+heuristics/adaptivediving/freq = -1
+
+# frequency for calling primal heuristic <clique> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: 0]
+heuristics/clique/freq = -1
+
+# frequency for calling primal heuristic <coefdiving> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: -1]
+heuristics/coefdiving/freq = 1
+heuristics/coefdiving/shadowmode = TRUE
+
+# frequency offset for calling primal heuristic <coefdiving>
+# [type: int, advanced: FALSE, range: [0,65534], default: 1]
+heuristics/coefdiving/freqofs = 0
+
+# frequency for calling primal heuristic <completesol> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: 0]
+heuristics/completesol/freq = -1
+
+# frequency for calling primal heuristic <conflictdiving> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: 10]
+heuristics/conflictdiving/freq = 1
+heuristics/conflictdiving/shadowmode = TRUE
+
+# frequency offset for calling primal heuristic <conflictdiving>
+# [type: int, advanced: FALSE, range: [0,65534], default:]
+heuristics/conflictdiving/freqofs = 0
+
+# frequency for calling primal heuristic <crossover> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: 30]
+heuristics/crossover/freq = 1
+heuristics/crossover/freqofs = 0
+heuristics/crossover/shadowmode = TRUE
+
+# frequency for calling primal heuristic <distributiondiving> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: 10]
+heuristics/distributiondiving/freq = 1
+heuristics/distributiondiving/shadowmode = TRUE
+
+# frequency offset for calling primal heuristic <distributiondiving>
+# [type: int, advanced: FALSE, range: [0,65534], default: 3]
+heuristics/distributiondiving/freqofs = 0
+
+# frequency for calling primal heuristic <farkasdiving> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: 10]
+heuristics/farkasdiving/freq = 1
+heuristics/farkasdiving/shadowmode = TRUE
+
+# frequency offset for calling primal heuristic <farkasdiving>
+# [type: int, advanced: FALSE, range: [0,65534], default:]
+heuristics/farkasdiving/freqofs = 0
+
+# frequency for calling primal heuristic <feaspump> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: 20]
+heuristics/feaspump/freq = -1
+
+# frequency for calling primal heuristic <fracdiving> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: 10]
+heuristics/fracdiving/freq = 1
+heuristics/fracdiving/shadowmode = TRUE
+
+# frequency offset for calling primal heuristic <fracdiving>
+# [type: int, advanced: FALSE, range: [0,65534], default: 3]
+heuristics/fracdiving/freqofs = 0
+
+# frequency for calling primal heuristic <gins> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: 20]
+heuristics/gins/freq = -1
+
+# frequency for calling primal heuristic <guideddiving> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: 10]
+heuristics/guideddiving/freq = 1
+heuristics/guideddiving/shadowmode = TRUE
+
+# frequency offset for calling primal heuristic <guideddiving>
+# [type: int, advanced: FALSE, range: [0,65534], default: 7]
+heuristics/guideddiving/freqofs = 0
+
+# frequency for calling primal heuristic <indicator> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: 1]
+heuristics/indicator/freq = -1
+
+# frequency for calling primal heuristic <intdiving> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: -1]
+heuristics/intdiving/freq = -1
+
+# frequency for calling primal heuristic <intshifting> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: 10]
+heuristics/intshifting/freq = -1
+
+# frequency for calling primal heuristic <linesearchdiving> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: 10]
+heuristics/linesearchdiving/freq = 1
+heuristics/linesearchdiving/shadowmode = TRUE
+
+# frequency offset for calling primal heuristic <linesearchdiving>
+# [type: int, advanced: FALSE, range: [0,65534], default: 6]
+heuristics/linesearchdiving/freqofs = 0
+
+heuristics/localbranching/freq = 1
+heuristics/localbranching/freqofs = 0
+heuristics/localbranching/shadowmode = TRUE
+
+# frequency for calling primal heuristic <locks> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: 0]
+heuristics/locks/freq = -1
+
+# frequency for calling primal heuristic <lpface> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: 15]
+heuristics/lpface/freq = -1
+
+# frequency for calling primal heuristic <alns> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: 20]
+heuristics/alns/freq = -1
+
+# frequency for calling primal heuristic <nlpdiving> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: 10]
+heuristics/nlpdiving/freq = -1
+
+# frequency for calling primal heuristic <multistart> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: 0]
+heuristics/multistart/freq = -1
+
+# frequency for calling primal heuristic <mpec> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: 50]
+heuristics/mpec/freq = -1
+
+# frequency for calling primal heuristic <objpscostdiving> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: 20]
+heuristics/objpscostdiving/freq = -1
+
+# frequency for calling primal heuristic <ofins> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: 0]
+heuristics/ofins/freq = -1
+
+# frequency for calling primal heuristic <oneopt> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: 1]
+heuristics/oneopt/freq = -1
+
+# frequency for calling primal heuristic <padm> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: 0]
+heuristics/padm/freq = -1
+
+# frequency for calling primal heuristic <pscostdiving> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: 10]
+heuristics/pscostdiving/freq = 1
+heuristics/pscostdiving/shadowmode = TRUE
+
+# frequency offset for calling primal heuristic <pscostdiving>
+# [type: int, advanced: FALSE, range: [0,65534], default: 2]
+heuristics/pscostdiving/freqofs = 0
+
+# frequency for calling primal heuristic <randrounding> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: 20]
+heuristics/randrounding/freq = -1
+
+# frequency for calling primal heuristic <rens> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: 0]
+heuristics/rens/freq = 1
+heuristics/rens/freqofs = 0
+heuristics/rens/shadowmode = TRUE
+
+# frequency for calling primal heuristic <reoptsols> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: 0]
+heuristics/reoptsols/freq = -1
+
+# frequency for calling primal heuristic <rins> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: 25]
+heuristics/rins/freq = 1
+heuristics/rins/freqofs = 0
+heuristics/rins/shadowmode = TRUE
+
+heuristics/mutation/freq = 1
+heuristics/mutation/freqofs = 0
+heuristics/mutation/shadowmode = TRUE
+
+heuristics/zeroobj/freq = -1
+heuristics/zeroobj/freqofs = 0
+heuristics/zeroobj/shadowmode = TRUE
+
+heuristics/dins/freq = 1
+heuristics/dins/freqofs = 0
+heuristics/dins/shadowmode = TRUE
+
+heuristics/trustregion/freq = 1
+heuristics/trustregion/freqofs = 0
+heuristics/trustregion/shadowmode = TRUE
+
+# frequency for calling primal heuristic <rootsoldiving> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: 20]
+heuristics/rootsoldiving/freq = -1
+
+# frequency for calling primal heuristic <rounding> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: 1]
+heuristics/rounding/freq = -1
+
+# frequency for calling primal heuristic <shiftandpropagate> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: 0]
+heuristics/shiftandpropagate/freq = -1
+
+# frequency for calling primal heuristic <shifting> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: 10]
+heuristics/shifting/freq = -1
+
+# frequency for calling primal heuristic <simplerounding> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: 1]
+heuristics/simplerounding/freq = -1
+
+# frequency for calling primal heuristic <subnlp> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: 1]
+heuristics/subnlp/freq = -1
+
+# frequency for calling primal heuristic <trivial> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: 0]
+heuristics/trivial/freq = -1
+
+# frequency for calling primal heuristic <trivialnegation> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: 0]
+heuristics/trivialnegation/freq = -1
+
+# frequency for calling primal heuristic <trysol> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: 1]
+heuristics/trysol/freq = -1
+
+# frequency for calling primal heuristic <undercover> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: 0]
+heuristics/undercover/freq = -1
+
+# frequency for calling primal heuristic <vbounds> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: 0]
+heuristics/vbounds/freq = -1
+
+# frequency for calling primal heuristic <veclendiving> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: 10]
+heuristics/veclendiving/freq = 1
+heuristics/veclendiving/shadowmode = TRUE
+
+# frequency offset for calling primal heuristic <veclendiving>
+# [type: int, advanced: FALSE, range: [0,65534], default: 4]
+heuristics/veclendiving/freqofs = 0
+
+# frequency for calling primal heuristic <zirounding> (-1: never, 0: only at depth freqofs)
+# [type: int, advanced: FALSE, range: [-1,65534], default: 1]
+heuristics/zirounding/freq = -1
+
