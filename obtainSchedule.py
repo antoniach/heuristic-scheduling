@@ -131,6 +131,9 @@ def computeBestIterLimitTuple(heuristic, itercosts, heurdata, miniter, maxiter, 
 		prob = len(solved)/len(heurdata)
 		scores += [(prob/((j-translation)*itercosts), j, solvednodes)]
 
+	if len(scores) == 0:
+		return (heuristic, 0, 0, set())
+
 	best = max(scores,key=lambda item:item[0])
 
 	if len(unsolved.intersection(best[2])) > 0:
