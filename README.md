@@ -10,7 +10,7 @@ To reproduce our results, do the following:
 	
   `python obtainSchedule.py <path/to/SCIPoutfile.out> <whichheuristics>`
 
-	where `<whichheuristics>` can take values *diving*, *LNS* and *diving+LNS* depending on which heuristics should be added to the schedule.
+	where `<whichheuristics>` can take values *diving*, *LNS*, and *diving+LNS* depending on which heuristics should be added to the schedule.
 
 * The schedule setting will be saved as **schedule.set**.
 
